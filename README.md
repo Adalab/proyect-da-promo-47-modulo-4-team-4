@@ -7,19 +7,29 @@ Este proyecto tiene como objetivo realizar un **Análisis Exploratorio de Datos 
 Se han empleado tres conjuntos de datos:
 
 1. **Dataset Principal**: Contiene información sobre pacientes diagnosticados con cáncer de mama, incluyendo:
-   - Edad
-   - Raza
-   - Estado Civil
-   - Estadios Tumorales (T Stage, N Stage, 6th Stage, A Stage)
-   - Diferenciación y Grado
-   - Tamaño del Tumor
-   - Estado de receptores hormonales (Estrógeno y Progesterona)
-   - Exámenes y Resultados Regionales de Ganglios Linfáticos
-   - Meses de Supervivencia y Estado del Paciente
+   - Age: Edad del paciente.
+   - Race: Raza del paciente.
+   - Marital Status: Estado civil del paciente.
+   - T Stage: Tamaño del tumor (T1, T2, etc.).
+   - N Stage: Nivel de afectación de los ganglios linfáticos (N0, N1, etc.).
+   - 6th Stage: Etapa del cáncer según la clasificación de la sexta edición de la AJCC (por ejemplo, IIA, IIIA).
+   - differentiate: Nivel de diferenciación del tumor (bien diferenciado, moderadamente diferenciado, pobremente diferenciado).
+   - Grade: Grado del tumor (2, 3, etc.).
+   - A Stage: Etapa avanzada del cáncer (regional, metastásico, etc.).
+   - Tumor Size: Tamaño del tumor en milímetros.
+   - Estrogen Status: Estado del receptor de estrógeno (positivo o negativo).
+   - Progesterone Status: Estado del receptor de progesterona (positivo o negativo).
+   - Regional Node Examined: Número de ganglios linfáticos examinados.
+   - Regional Node Positive: Número de ganglios linfáticos afectados.
+   - Survival Months: Meses de supervivencia del paciente.
+   - Status: Estado del paciente (vivo o fallecido)
 
 2. **Dataset por Continentes**: Contiene información sobre el número total de casos, tasas de incidencia y riesgos acumulativos en diferentes continentes.
 
-3. **Dataset por Países**: Presenta datos sobre la incidencia del cáncer de mama por país, con información sobre tasas estandarizadas por edad, tasas crudas y riesgos acumulativos.
+3. **Dataset por Países**: Presenta datos sobre la incidencia del cáncer de mama por país;
+   - Tasa de incidencia estandarizada por edad: Permite comparar la incidencia del cáncer entre regiones con diferentes estructuras de edad.
+   - Crude rate: Tasa cruda de incidencia, que es el número de casos por cada 100,000 habitantes sin ajuste por edad.
+   - Cumulative risk: Riesgo acumulado de desarrollar cáncer de mama hasta los 75 años, expresado como un porcentaje.
 
 ## Objetivos del Análisis
 - Explorar la distribución de casos según variables demográficas y clínicas.
@@ -37,6 +47,6 @@ Se han empleado tres conjuntos de datos:
 - 💡 **Distribución por edad:** La mayor cantidad de diagnósticos ocurre en pacientes entre **45 y 60 años**.
 - 💡 **Supervivencia:** De un total de 4 mil casos, aproximadamente **3.4 mil pacientes siguen vivos**, mientras que **600 han fallecido**.
 - 💡 **Etapas del cáncer:** La mayoría de los casos se encuentran en las etapas **IIA (32.43%) e IIB (28.08%)**, seguidos por **IIIA (26.09%)**.
-- 💡 **Países con mayor incidencia:** Europa y Norteamérica presentan las tasas más altas de cáncer de mama.
+- 💡 **Países con mayor incidencia:** China y Estados Unidos presentan las tasas más altas de cáncer de mama.
 
 ---
